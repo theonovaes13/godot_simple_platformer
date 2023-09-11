@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bgui2cowhjvp8"]
+[gd_scene load_steps=14 format=3 uid="uid://bgui2cowhjvp8"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_u6c1o"]
 [ext_resource type="Texture2D" uid="uid://cejrcmgt07e26" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png" id="2_7h2bh"]
+[ext_resource type="Texture2D" uid="uid://csxn0walr4uxh" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Running (32 x 32).png" id="3_6j16a"]
+[ext_resource type="Texture2D" uid="uid://m4okwj7hihxl" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Jumping (32 x 32).png" id="3_j5mlb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jqm3q"]
 radius = 8.0
@@ -15,6 +17,26 @@ region = Rect2(0, 0, 32, 32)
 atlas = ExtResource("2_7h2bh")
 region = Rect2(32, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpuv8"]
+atlas = ExtResource("3_j5mlb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y306p"]
+atlas = ExtResource("3_6j16a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6atvy"]
+atlas = ExtResource("3_6j16a")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2tka"]
+atlas = ExtResource("3_6j16a")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jx4l"]
+atlas = ExtResource("3_6j16a")
+region = Rect2(96, 0, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_3bupm"]
 animations = [{
 "frames": [{
@@ -27,9 +49,34 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpuv8")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y306p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6atvy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2tka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jx4l")
+}],
+"loop": true,
+"name": &"running",
+"speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["playerScene"]]
 script = ExtResource("1_u6c1o")
 
 [node name="collisionBlock" type="CollisionShape2D" parent="."]
@@ -38,6 +85,5 @@ shape = SubResource("CapsuleShape2D_jqm3q")
 [node name="animation" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -7)
 sprite_frames = SubResource("SpriteFrames_3bupm")
-animation = &"idle"
+animation = &"running"
 autoplay = "idle"
-frame_progress = 0.841305
