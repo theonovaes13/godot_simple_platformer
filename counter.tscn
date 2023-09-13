@@ -1,0 +1,88 @@
+[gd_scene load_steps=14 format=3 uid="uid://du7yql4aihi8x"]
+
+[ext_resource type="Texture2D" uid="uid://dyrqbyk5c6nw3" path="res://assets/Mini FX, Items & UI/Mini UI/Timer_Coin_Numbers_Outlined (8 x 8).png" id="1_f6wns"]
+[ext_resource type="Script" path="res://counter_sprite.gd" id="2_ipyl2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5ffd"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(24, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jll6f"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtblt"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(32, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ng56"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(40, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uoun4"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(48, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2oyy"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(16, 8, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kums"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(24, 8, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwdry"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(40, 8, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jyqp"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(32, 8, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fekpv"]
+atlas = ExtResource("1_f6wns")
+region = Rect2(48, 8, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t7g4g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5ffd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jll6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtblt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ng56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uoun4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2oyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kums")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwdry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jyqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fekpv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="counter" type="Node"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t7g4g")
+script = ExtResource("2_ipyl2")

@@ -12,17 +12,17 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var playerSize =  Vector2(32,32)
 var leftBorder = 0 + playerSize.x / 2
 var rightBorder = VIEWPORT_SIZE - playerSize.x / 2
-
 func _physics_process(delta):
 	global_position.x = clamp(global_position.x, leftBorder, rightBorder)
+	var jump_actions_pressed = Input.is_action_pressed("ui_accept") or Input.is_action_pressed("ui_up")
 	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
 	# Handle Jump.
-	var jump = Input.is_action_just_pressed("ui_accept") and is_on_floor()
-	if jump:
+	var able_to_jump := jump_actions_pressed and is_on_floor()
+	if able_to_jump:
 		velocity.y = JUMP_INITIAL_VELOCITY
 		
 	if !is_on_floor():
@@ -32,7 +32,7 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	
-	if !direction and !jump and is_on_floor():
+	if !direction and !able_to_jump and is_on_floor():
 		animation.set_animation('idle')
 	
 	if direction:

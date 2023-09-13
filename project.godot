@@ -15,6 +15,11 @@ run/main_scene="res://world_01.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ScoreCounter="*res://score_counter.gd"
+TimeCounter="*res://scripts/time_counter.gd"
+
 [display]
 
 window/size/viewport_width=640

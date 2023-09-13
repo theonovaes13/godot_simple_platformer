@@ -12,6 +12,7 @@ func coin_pickup() -> void:
 	animation.set_animation('pickup_sfx')
 	coin_pickup_fx.play()
 
+
 func is_pickupable() -> bool:
 	return animation.get_animation() == 'idle'
 
