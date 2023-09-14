@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3syg03plju43"]
+[gd_scene load_steps=6 format=3 uid="uid://c3syg03plju43"]
 
 [ext_resource type="PackedScene" uid="uid://bgui2cowhjvp8" path="res://scenes/playerScene.tscn" id="1_n11dq"]
 [ext_resource type="PackedScene" uid="uid://dvw5nklqapho0" path="res://scenes/tile_map.tscn" id="3_dwhm8"]
 [ext_resource type="PackedScene" uid="uid://dsgaf28kccrfu" path="res://background_world_01.tscn" id="5_7elqj"]
 [ext_resource type="PackedScene" uid="uid://bc8lrleh2lb8x" path="res://scenes/coin.tscn" id="5_812rx"]
+[ext_resource type="PackedScene" uid="uid://b7gfudy6jv7iy" path="res://node_2d.tscn" id="5_j7a04"]
 
 [node name="World-01" type="Node2D"]
 
@@ -53,3 +54,6 @@ position = Vector2(408, 246)
 position = Vector2(255, 201)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("5_7elqj")]
+
+[node name="moving_platform" parent="." instance=ExtResource("5_j7a04")]
+position = Vector2(70, 251)

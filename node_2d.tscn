@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7gfudy6jv7iy"]
+
+[ext_resource type="Script" path="res://scripts/moving_platform.gd" id="1_h4oje"]
+[ext_resource type="Texture2D" uid="uid://cd5tqwlwk6cb7" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png" id="2_m3gup"]
+
+[sub_resource type="GDScript" id="GDScript_hcr2y"]
+script/source = "extends AnimatableBody2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _physics_process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_toq3v"]
+size = Vector2(32, 16)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_h4oje")
+
+[node name="platform" type="AnimatableBody2D" parent="."]
+script = SubResource("GDScript_hcr2y")
+
+[node name="sprite" type="Sprite2D" parent="platform"]
+texture = ExtResource("2_m3gup")
+region_enabled = true
+region_rect = Rect2(96, 64, 32, 16)
+
+[node name="collision" type="CollisionShape2D" parent="platform"]
+shape = SubResource("RectangleShape2D_toq3v")
