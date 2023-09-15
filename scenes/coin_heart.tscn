@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw6pgfqxgc7ge"]
+
+[ext_resource type="PackedScene" uid="uid://bc8lrleh2lb8x" path="res://scenes/coin.tscn" id="1_nap7r"]
+
+[node name="coin_heart" type="Node2D"]
+
+[node name="coin1" parent="." instance=ExtResource("1_nap7r")]
+
+[node name="coin7" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(17, -7)
+
+[node name="coin11" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(29, -19)
+
+[node name="coin14" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(29, -36)
+
+[node name="coin8" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(-16, -8)
+
+[node name="coin12" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(-28, -20)
+
+[node name="coin9" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(-28, -36)
+
+[node name="coin13" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(0, -44)
+
+[node name="coin15" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(-17, -49)
+
+[node name="coin16" parent="." instance=ExtResource("1_nap7r")]
+position = Vector2(17, -49)
