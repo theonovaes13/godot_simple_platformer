@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://bbkjhbsa3v874"]
+
+[ext_resource type="Script" path="res://scripts/coin_indicator.gd" id="1_eugjf"]
+[ext_resource type="Texture2D" uid="uid://dym2oawh6g7od" path="res://assets/sprites/Mini FX, Items & UI/Common Pick-ups/Small_Coin (16 x 16).png" id="1_k61l7"]
+[ext_resource type="FontFile" uid="uid://cg2131yxi7tqh" path="res://assets/fonts/RevMiniPixel.ttf" id="2_xdi8c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3253y"]
+atlas = ExtResource("1_k61l7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txyxn"]
+atlas = ExtResource("1_k61l7")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwp0o"]
+atlas = ExtResource("1_k61l7")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvyl4"]
+atlas = ExtResource("1_k61l7")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jyuk4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3253y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txyxn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwp0o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvyl4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_egen6"]
+line_spacing = 0.0
+font = ExtResource("2_xdi8c")
+font_size = 8
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+shadow_offset = Vector2(0, 0)
+
+[node name="coin_indicator" type="Node2D"]
+position = Vector2(48, 48)
+scale = Vector2(2, 2)
+script = ExtResource("1_eugjf")
+
+[node name="coin" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 2)
+sprite_frames = SubResource("SpriteFrames_jyuk4")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="coin"]
+offset_top = -9.0
+offset_right = 40.0
+offset_bottom = 20.0
+text = "0000"
+label_settings = SubResource("LabelSettings_egen6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+uppercase = true

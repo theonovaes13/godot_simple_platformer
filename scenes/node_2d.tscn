@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8ev7lc0met3q"]
+
+[ext_resource type="Script" path="res://scenes/score_counter.gd" id="1_mv8md"]
+[ext_resource type="FontFile" uid="uid://cg2131yxi7tqh" path="res://assets/fonts/RevMiniPixel.ttf" id="1_qxish"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_odym3"]
+line_spacing = 0.0
+font = ExtResource("1_qxish")
+font_size = 8
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+shadow_offset = Vector2(0, 0)
+
+[node name="score_counter" type="Node2D"]
+script = ExtResource("1_mv8md")
+
+[node name="SCORE" type="Label" parent="."]
+offset_top = -9.0
+offset_right = 40.0
+offset_bottom = 20.0
+text = "SCORE:"
+label_settings = SubResource("LabelSettings_odym3")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="score_counter" type="Label" parent="."]
+offset_left = 31.0
+offset_top = -9.0
+offset_right = 71.0
+offset_bottom = 20.0
+text = "000000"
+label_settings = SubResource("LabelSettings_odym3")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+uppercase = true

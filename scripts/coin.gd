@@ -3,6 +3,8 @@ extends Node2D
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var coin_pickup_fx: AudioStreamPlayer = $coin_pickup_fx
 
+var score = GlobalVariables.score
+var coins_collected = GlobalVariables.coins_collected
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -24,4 +26,6 @@ func _on_body_entered(body: Node2D) -> void:
 	if is_pickupable():
 		if body.is_in_group('playerScene'):
 			coin_pickup()
-	
+			GlobalVariables.score += 100
+			GlobalVariables.coins_collected +=1
+			print(coins_collected)

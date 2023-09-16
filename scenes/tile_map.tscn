@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=3 uid="uid://dvw5nklqapho0"]
 
-[ext_resource type="Texture2D" uid="uid://dhih6p8fv4ynr" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_5c084"]
-[ext_resource type="Texture2D" uid="uid://dwyte5plsnfym" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_g8xtc"]
-[ext_resource type="Texture2D" uid="uid://cd5tqwlwk6cb7" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png" id="3_2vt48"]
-[ext_resource type="Texture2D" uid="uid://bo8k4moomsrjm" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png" id="4_6e64c"]
-[ext_resource type="Texture2D" uid="uid://bt6g7hlrhskqq" path="res://assets/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png" id="8_jfsuv"]
+[ext_resource type="Texture2D" uid="uid://dhih6p8fv4ynr" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_m2ggl"]
+[ext_resource type="Texture2D" uid="uid://dwyte5plsnfym" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_875mv"]
+[ext_resource type="Texture2D" uid="uid://cd5tqwlwk6cb7" path="res://assets/sprites/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png" id="3_pncyb"]
+[ext_resource type="Texture2D" uid="uid://bo8k4moomsrjm" path="res://assets/sprites/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png" id="4_n41km"]
+[ext_resource type="Texture2D" uid="uid://bt6g7hlrhskqq" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png" id="5_15ti3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tvbxe"]
-texture = ExtResource("1_5c084")
+texture = ExtResource("1_m2ggl")
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
@@ -44,12 +44,10 @@ texture = ExtResource("1_5c084")
 1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:3/0/physics_layer_0/angular_velocity = 0.0
 1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-1:3/0/physics_layer_0/polygon_0/one_way = true
 2:3/0 = 0
 2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:3/0/physics_layer_0/angular_velocity = 0.0
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-2:3/0/physics_layer_0/polygon_0/one_way = true
 3:3/0 = 0
 3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:3/0/physics_layer_0/angular_velocity = 0.0
@@ -86,6 +84,8 @@ texture = ExtResource("1_5c084")
 11:3/0 = 0
 11:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:3/0/physics_layer_0/angular_velocity = 0.0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -7, -3.5, -6.875, -2.875, -3.75, -4.5, -1.25, -8, -1.25)
+11:3/0/physics_layer_0/polygon_1/points = PackedVector2Array(4.125, -6.75, 4.125, -1.5, 8, -1.375, 8, -6.75)
 12:3/0 = 0
 12:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 12:3/0/physics_layer_0/angular_velocity = 0.0
@@ -104,9 +104,11 @@ texture = ExtResource("1_5c084")
 1:4/0 = 0
 1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:4/0/physics_layer_0/angular_velocity = 0.0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:4/0 = 0
 2:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:4/0/physics_layer_0/angular_velocity = 0.0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:4/0 = 0
 3:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:4/0/physics_layer_0/angular_velocity = 0.0
@@ -125,33 +127,40 @@ texture = ExtResource("1_5c084")
 11:4/0 = 0
 11:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:4/0/physics_layer_0/angular_velocity = 0.0
-3:5/0 = 0
-3:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-3:5/0/physics_layer_0/angular_velocity = 0.0
+11:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.5, -8, -6.625, 8, 6.625, 8, 6.5, -8)
 4:5/0 = 0
 4:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:5/0/physics_layer_0/angular_velocity = 0.0
 5:5/0 = 0
 5:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:5/0/physics_layer_0/angular_velocity = 0.0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:5/0 = 0
 11:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:5/0/physics_layer_0/angular_velocity = 0.0
+11:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.5, -8, -4.375, 5.25, 4.5, 5.375, 6.5, -8)
 3:6/0 = 0
 3:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:6/0/physics_layer_0/angular_velocity = 0.0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:6/0 = 0
 4:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:6/0/physics_layer_0/angular_velocity = 0.0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:6/0 = 0
 5:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:6/0/physics_layer_0/angular_velocity = 0.0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:8/0 = 0
 4:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:8/0/physics_layer_0/angular_velocity = 0.0
+3:5/0 = 0
+3:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:5/0/physics_layer_0/angular_velocity = 0.0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6nqxk"]
-texture = ExtResource("2_g8xtc")
+texture = ExtResource("2_875mv")
 1:1/size_in_atlas = Vector2i(3, 3)
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -215,7 +224,7 @@ texture = ExtResource("2_g8xtc")
 7:5/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uv0pu"]
-texture = ExtResource("3_2vt48")
+texture = ExtResource("3_pncyb")
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
@@ -263,7 +272,7 @@ texture = ExtResource("3_2vt48")
 9:4/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2mdv6"]
-texture = ExtResource("4_6e64c")
+texture = ExtResource("4_n41km")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -278,7 +287,7 @@ texture = ExtResource("4_6e64c")
 3:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r557o"]
-texture = ExtResource("8_jfsuv")
+texture = ExtResource("5_15ti3")
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0

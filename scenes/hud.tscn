@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b63cfcg46wwvc"]
+
+[ext_resource type="PackedScene" uid="uid://bupumylkt0ra3" path="res://scenes/health_indicator.tscn" id="1_apkko"]
+[ext_resource type="PackedScene" uid="uid://bbkjhbsa3v874" path="res://coin_indicator.tscn" id="2_gyfc1"]
+[ext_resource type="PackedScene" uid="uid://b8ev7lc0met3q" path="res://scenes/node_2d.tscn" id="3_oek4w"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="health_indicator" parent="." instance=ExtResource("1_apkko")]
+position = Vector2(48, 24)
+scale = Vector2(4, 4)
+
+[node name="coin_indicator" parent="." instance=ExtResource("2_gyfc1")]
+position = Vector2(528, 12)
+scale = Vector2(3, 3)
+
+[node name="score_indicator" parent="." instance=ExtResource("3_oek4w")]
+position = Vector2(500, 51)
+scale = Vector2(2, 2)

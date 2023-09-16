@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://dsgaf28kccrfu"]
+
+[ext_resource type="Texture2D" uid="uid://b4jn7bt7v4sy8" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="1_ys6rf"]
+[ext_resource type="Texture2D" uid="uid://xgx544ixke0k" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="2_0f5co"]
+[ext_resource type="Shader" path="res://assets/shaders/background_world_01.gdshader" id="3_5tnpo"]
+[ext_resource type="Texture2D" uid="uid://dob77cdgaaqvx" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="4_fp5vf"]
+[ext_resource type="Texture2D" uid="uid://bbj8eqf53prm2" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="5_kan8u"]
+[ext_resource type="Texture2D" uid="uid://0hckvj1o556b" path="res://assets/sprites/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="6_u3g3l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_24bpu"]
+shader = ExtResource("3_5tnpo")
+shader_parameter/movement_speed = 0.1
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(432, 0)
+
+[node name="sky" type="Sprite2D" parent="ParallaxLayer"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_ys6rf")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="clouds_stationary" type="Sprite2D" parent="ParallaxLayer2"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_0f5co")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="clouds_moving" type="Sprite2D" parent="ParallaxLayer3"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_24bpu")
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_fp5vf")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="mountains" type="Sprite2D" parent="ParallaxLayer4"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_kan8u")
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="forest" type="Sprite2D" parent="ParallaxLayer5"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_u3g3l")
+centered = false

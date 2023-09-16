@@ -1,0 +1,237 @@
+[gd_scene load_steps=3 format=3 uid="uid://d66hsf8qb8ue"]
+
+[ext_resource type="PackedScene" uid="uid://bc8lrleh2lb8x" path="res://scenes/coin.tscn" id="1_gvirl"]
+[ext_resource type="PackedScene" uid="uid://bw6pgfqxgc7ge" path="res://scenes/coin_heart.tscn" id="2_vojsj"]
+
+[node name="love_you_coins" type="Node2D"]
+
+[node name="love" type="Node2D" parent="."]
+
+[node name="coin6" parent="love" instance=ExtResource("1_gvirl")]
+
+[node name="coin7" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(0, -16)
+
+[node name="coin8" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(0, -32)
+
+[node name="coin9" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(0, -48)
+
+[node name="coin10" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(16, 0)
+
+[node name="coin11" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(32, 0)
+
+[node name="coin12" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(64, 0)
+
+[node name="coin13" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(80, 0)
+
+[node name="coin14" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(96, 0)
+
+[node name="coin15" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(104, -16)
+
+[node name="coin16" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(56, -16)
+
+[node name="coin17" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(56, -32)
+
+[node name="coin18" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(104, -32)
+
+[node name="coin19" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(104, -48)
+
+[node name="coin20" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(96, -64)
+
+[node name="coin21" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(64, -64)
+
+[node name="coin22" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(56, -48)
+
+[node name="coin23" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(80, -64)
+
+[node name="coin24" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(0, -64)
+
+[node name="coin25" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(128, -64)
+
+[node name="coin26" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(136, -48)
+
+[node name="coin27" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(144, -32)
+
+[node name="coin28" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(152, -16)
+
+[node name="coin29" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(160, 0)
+
+[node name="coin30" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(168, -16)
+
+[node name="coin31" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(176, -32)
+
+[node name="coin32" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(184, -48)
+
+[node name="coin33" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(192, -64)
+
+[node name="coin34" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(212, -64)
+
+[node name="coin35" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(212, -48)
+
+[node name="coin36" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(212, -32)
+
+[node name="coin37" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(212, -16)
+
+[node name="coin38" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(212, 0)
+
+[node name="coin39" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(228, 0)
+
+[node name="coin40" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(244, 0)
+
+[node name="coin41" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(260, 0)
+
+[node name="coin42" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(260, -32)
+
+[node name="coin43" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(244, -32)
+
+[node name="coin44" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(228, -32)
+
+[node name="coin45" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(228, -64)
+
+[node name="coin46" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(244, -64)
+
+[node name="coin47" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(260, -64)
+
+[node name="coin48" parent="love" instance=ExtResource("1_gvirl")]
+position = Vector2(260, -64)
+
+[node name="you" type="Node2D" parent="."]
+
+[node name="coin49" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(452, -64)
+
+[node name="coin50" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(452, -48)
+
+[node name="coin51" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(452, -32)
+
+[node name="coin52" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(460, -16)
+
+[node name="coin53" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(468, 0)
+
+[node name="coin54" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(484, 0)
+
+[node name="coin56" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(492, -16)
+
+[node name="coin57" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(500, -32)
+
+[node name="coin58" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(500, -48)
+
+[node name="coin59" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(500, -64)
+
+[node name="coin60" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(500, -64)
+
+[node name="coin12" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(392, 0)
+
+[node name="coin13" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(408, 0)
+
+[node name="coin14" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(424, 0)
+
+[node name="coin15" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(432, -16)
+
+[node name="coin16" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(384, -16)
+
+[node name="coin17" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(384, -32)
+
+[node name="coin18" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(432, -32)
+
+[node name="coin19" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(432, -48)
+
+[node name="coin20" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(424, -64)
+
+[node name="coin21" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(392, -64)
+
+[node name="coin22" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(384, -48)
+
+[node name="coin23" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(408, -64)
+
+[node name="coin24" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(360, -64)
+
+[node name="coin25" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(352, -48)
+
+[node name="coin26" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(344, -32)
+
+[node name="coin27" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(328, -32)
+
+[node name="coin28" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(320, -48)
+
+[node name="coin29" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(312, -64)
+
+[node name="coin30" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(336, -16)
+
+[node name="coin31" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(336, 0)
+
+[node name="coin32" parent="you" instance=ExtResource("1_gvirl")]
+position = Vector2(336, 0)
+
+[node name="coin_heart" parent="." instance=ExtResource("2_vojsj")]
+position = Vector2(584, -8)

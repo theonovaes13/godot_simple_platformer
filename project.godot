@@ -11,14 +11,13 @@ config_version=5
 [application]
 
 config/name="Platform 2d"
-run/main_scene="res://world_01.tscn"
+run/main_scene="res://scenes/world_01.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-ScoreCounter="*res://score_counter.gd"
-TimeCounter="*res://scripts/time_counter.gd"
+GlobalVariables="*res://scripts/global_variables.gd"
 
 [display]
 

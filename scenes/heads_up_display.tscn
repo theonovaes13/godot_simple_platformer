@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8m82kg1g1nb7"]
+
+[ext_resource type="PackedScene" uid="uid://bupumylkt0ra3" path="res://scenes/health_indicator.tscn" id="1_64mee"]
+
+[node name="heads_up_display" type="Node2D"]
+clip_children = 1
+
+[node name="health_indicator" parent="." instance=ExtResource("1_64mee")]
